@@ -8,10 +8,10 @@
 	<string>settings=~/.m2/settings.xml
 if [ -f "$settings" ]
 then
-	open -a TextMate ~/.m2/settings.xml
+	open -a TextMate "$settings"
 else
-	TextMate.exit_show_tooltip "‘$settings’ does not exist"
-fi </string>
+	echo "‘$settings’ does not exist"
+fi</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
