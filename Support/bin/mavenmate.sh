@@ -19,6 +19,6 @@ else
 fi
 
 
-/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby  -- "$TM_BUNDLE_SUPPORT/lib/MavenMate.rb" -m "$TM_MVN" -l "$MVN_PROJECT" $@
+ruby18  -- "$TM_BUNDLE_SUPPORT/lib/MavenMate.rb" -m "$TM_MVN" -l "$MVN_PROJECT" $@
 
 rescan_project
